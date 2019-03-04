@@ -7,3 +7,6 @@ function cs () {
 alias addalias="vi ~/.bash_aliases"
 alias sourcebash="source ~/.bashrc"
 alias mci="mvn clean install"
+alias mct="mvn clean test"
+alias ll="ls -al"
+alias c="clear"
