@@ -18,3 +18,10 @@ if ln -s ~/aliases/.functions ~/.functions
 	else 
 		echo "could not create symlink for .functions"
 fi
+
+if ln -s ~/aliases/.gitconfig ~/.gitconfig
+        then
+                echo "created symlink for .gitconfig"
+        else
+                echo "could not create symlink for .gitconfig"
+fi
