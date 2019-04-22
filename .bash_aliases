@@ -1,6 +1,5 @@
 # git 
 alias gco="git checkout"
-alias cm='commit -m'
 alias gs='git status'
 alias gb='git branch -a'
 alias gpull='git pull'
@@ -25,8 +24,8 @@ alias dockerl='docker ps -a'
 alias cdtempdir='cd $(echo $TMPDIR)'
 alias ll="ls -al"
 alias c="clear"
-alias addalias="vi ~/dotfiles/.bash_aliases"
-alias sourcebash="source ~/dotfiles/.bashrc"
+alias addalias="vi ~/aliases/.bash_aliases"
+alias sourcebash="source ~/.bashrc"
 alias update="sudo apt-get update"
 
 if [ -f ~/.functions ]; then
