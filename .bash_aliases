@@ -24,9 +24,10 @@ alias dockerl='docker ps -a'
 alias cdtempdir='cd $(echo $TMPDIR)'
 alias ll="ls -al"
 alias c="clear"
-alias addalias="vi ~/aliases/.bash_aliases"
+alias addalias="vi ~/dotfiles/.bash_aliases"
 alias sourcebash="source ~/.bashrc"
 alias update="sudo apt-get update"
+alias jup="jupyter notebook"
 
 if [ -f ~/.functions ]; then
     . ~/.functions
