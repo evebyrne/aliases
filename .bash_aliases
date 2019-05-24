@@ -25,10 +25,14 @@ alias cdtempdir='cd $(echo $TMPDIR)'
 alias ll="ls -al"
 alias c="clear"
 alias addalias="vi ~/dotfiles/.bash_aliases"
-alias sourcebash="source ~/.bashrc"
+alias sbash="source ~/.bashrc"
 alias update="sudo apt-get update"
 alias jup="jupyter notebook"
 
 if [ -f ~/.functions ]; then
     . ~/.functions
 fi
+
+alias clean="sudo apt-get autoremove"
+alias thumb="rm -rf ~/.cache/thumbnails/*"
+alias addfxn="vi ~/dotfiles/.functions"

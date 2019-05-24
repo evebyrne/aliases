@@ -2,3 +2,7 @@ function cs () {
     cd "$@" && ls
 }
 
+function sfast () {
+    cd ~/dev/fastai && conda activate fastai-cpu
+    xdg-open http://course18.fast.ai/ml && jup
+}
