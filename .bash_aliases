@@ -36,3 +36,5 @@ fi
 alias clean="sudo apt-get autoremove"
 alias thumb="rm -rf ~/.cache/thumbnails/*"
 alias addfxn="vi ~/dotfiles/.functions"
+alias xo="xdg-open"
+alias gi="git init"

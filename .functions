@@ -6,3 +6,19 @@ function sfast () {
     cd ~/dev/fastai && conda activate fastai-cpu
     xdg-open http://course18.fast.ai/ml && jup
 }
+
+function cdmv(){
+   mkdir $1 && cd $1
+}
+
+function crun(){
+   gcc $1 -o ${1::-2} && ./${1::-2}
+}
+
+function spdf(){
+   mkdir result_split_pdf
+   pdftk $1 cat 1-$2 output result_split_pdf/first_half.pdf
+   var=$((($2) + 1))
+   pdftk $1 cat ${var}-end output result_split_pdf/second_half.pdf
+
+}
