@@ -9,7 +9,7 @@ alias rmdirF='rm -rf'
 function cs () {
     cd "$@" && ls
     }
-sshmyec2='ssh -i "~/.ssh/my-key.pem" ubuntu@ec2-54-70-78-210.us-west-2.compute.amazonaws.com -L8888:127.0.0.1:8888'
+alias sshmyec2='ssh -i "~/.ssh/my-key.pem" ubuntu@ec2-54-70-78-210.us-west-2.compute.amazonaws.com -L8888:127.0.0.1:8888'
 alias td='terraform destroy'
 alias ta='terraform apply'
 alias gs='git status'
