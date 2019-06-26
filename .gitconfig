@@ -1,0 +1,16 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Eve Byrne
+[core]
+	excludesfile = /Users/ebyrne/.gitignore_global
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	co = checkout
+[apply]
+	whitespace = nowarn
