@@ -1,5 +1,5 @@
 function cs () {
-    cd "$@" && ls
+    cd "$@" && ll
 }
 
 function sfast () {
@@ -7,9 +7,6 @@ function sfast () {
     xdg-open http://course18.fast.ai/ml && jup
 }
 
-function cdmv(){
-   mkdir $1 && cd $1
-}
 
 function crun(){
    gcc $1 -o ${1::-2} && ./${1::-2}
@@ -21,4 +18,14 @@ function spdf(){
    var=$((($2) + 1))
    pdftk $1 cat ${var}-end output result_split_pdf/second_half.pdf
 
+}
+function md(){
+   mkdir $1 && cd $1
+}
+function ms(){
+   echo "#!/bin/sh" >> $1
+}
+
+function condad(){
+   conda env remove --name $1 && conda env list
 }
