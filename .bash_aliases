@@ -24,7 +24,7 @@ alias dockerl='docker ps -a'
 alias cdtempdir='cd $(echo $TMPDIR)'
 alias ll="ls -al"
 alias c="clear"
-alias addalias="vi ~/dotfiles/.bash_aliases"
+alias addalias="vi ~/aliases/.bash_aliases"
 alias sb="source ~/.bashrc"
 alias update="sudo apt-get update && clean"
 alias jup="jupyter notebook"
@@ -35,7 +35,7 @@ fi
 
 alias clean="sudo apt-get autoremove"
 alias thumb="rm -rf ~/.cache/thumbnails/*"
-alias addfxn="vi ~/dotfiles/.functions"
+alias addfxn="vi ~/aliases/.functions"
 alias gi="git init"
 alias condacr="conda create --name"
 alias condal="conda env list"
