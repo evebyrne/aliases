@@ -12,6 +12,11 @@ function crun(){
    gcc $1 -o ${1::-2} && ./${1::-2}
 }
 
+function cpprun(){
+   g++ $1 -o ${1::-2} && ./${1::-2}
+}
+
+
 function spdf(){
    mkdir result_split_pdf
    pdftk $1 cat 1-$2 output result_split_pdf/first_half.pdf
@@ -28,4 +33,13 @@ function ms(){
 
 function condad(){
    conda env remove --name $1 && conda env list
+}
+
+function scssvpn(){
+   cd ~/Downloads && sudo openvpn --config scss.ovpn 
+}
+
+function scssvm(){
+    xfreerdp /f /u:byrnee39@itserv /p:$1 /v:$2 
+
 }

@@ -51,7 +51,11 @@ alias pipl="pip list"
 alias o="xdg-open"
 alias gp="git push"
 alias purge="sudo apt-get purge"
-#xfreerdp /u:byrnee39@itserv /p:XXXX /v:134.226.60.78
+#xfreerdp /f /u:byrnee39@itserv /p:XXXX /v:134.226.60.78
 alias pipi='pip install --user'
 alias lsd='ls -d */'
 alias googleimagesdownload='googleimagesdownload --chromedriver "/usr/lib/chromium-browser/chromedriver"'
+alias fbdf="firebase deploy --only functions:updateUser"
+alias dev_appserver.py="/usr/lib/google-cloud-sdk/bin/dev_appserver.py"
+alias g='gedit'
+alias fbdfxn='firebase deploy --only functions'
