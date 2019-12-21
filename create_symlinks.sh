@@ -19,13 +19,6 @@ if ln -s ~/aliases/.functions ~/.functions
 		echo "could not create symlink for .functions"
 fi
 
-if ln -s ~/aliases/.gitconfig ~/.gitconfig
-        then
-                echo "created symlink for .gitconfig"
-        else
-                echo "could not create symlink for .gitconfig"
-fi
-
 if ln -s ~/aliases/.vimrc ~/.vimrc
         then
                 echo "created symlink for .vimrc"
