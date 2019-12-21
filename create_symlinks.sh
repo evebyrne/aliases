@@ -25,3 +25,12 @@ if ln -s ~/aliases/.gitconfig ~/.gitconfig
         else
                 echo "could not create symlink for .gitconfig"
 fi
+
+if ln -s ~/aliases/.vimrc ~/.vimrc
+        then
+                echo "created symlink for .vimrc"
+        else
+                echo "could not create symlink for .vimrc"
+fi
+
+
