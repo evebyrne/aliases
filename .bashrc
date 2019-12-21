@@ -114,18 +114,18 @@ eval $(thefuck --alias)
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-conda config --set auto_activate_base false
-
-__conda_setup="$('/users/ugrad/byrnee39/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/eve/anaconda2/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/users/ugrad/byrnee39/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/users/ugrad/byrnee39/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/eve/anaconda2/etc/profile.d/conda.sh" ]; then
+        . "/home/eve/anaconda2/etc/profile.d/conda.sh"
     else
-        export PATH="/users/ugrad/byrnee39/anaconda3/bin:$PATH"
+        export PATH="/home/eve/anaconda2/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
 export PATH="~/.local/bin:$PATH"
+# export PATH="~/anaconda2/bin:$PATH"  # commented out by conda initialize
+#. "/home/eve/anaconda2/etc/profile.d/conda.sh"

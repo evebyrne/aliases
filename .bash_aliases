@@ -24,7 +24,7 @@ alias dockerl='docker ps -a'
 alias cdtempdir='cd $(echo $TMPDIR)'
 alias ll="ls -al"
 alias c="clear"
-alias addalias="vi ~/aliases/.bash_aliases"
+alias addalias="vi ~/dotfiles/.bash_aliases"
 alias sb="source ~/.bashrc"
 alias update="sudo apt-get update && clean"
 alias jup="jupyter notebook"
@@ -33,9 +33,8 @@ if [ -f ~/.functions ]; then
     . ~/.functions
 fi
 
-alias clean="sudo apt-get autoremove"
-alias thumb="rm -rf ~/.cache/thumbnails/*"
-alias addfxn="vi ~/aliases/.functions"
+alias clean="sudo apt-get clean && sudo apt-get autoremove && rm -rf ~/.cache/thumbnails/*"
+alias addfxn="vi ~/dotfiles/.functions"
 alias gi="git init"
 alias condacr="conda create --name"
 alias condal="conda env list"
@@ -59,3 +58,6 @@ alias fbdf="firebase deploy --only functions:updateUser"
 alias dev_appserver.py="/usr/lib/google-cloud-sdk/bin/dev_appserver.py"
 alias g='gedit'
 alias fbdfxn='firebase deploy --only functions'
+alias gcad='gcloud app deploy'
+alias p3venv='python3 -m venv'
+alias gc='git clone'
