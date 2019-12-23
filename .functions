@@ -40,6 +40,23 @@ function scssvpn(){
 }
 
 function scssvm(){
-    xfreerdp /f /u:byrnee39@itserv /p:$1 /v:$2 
+    xfreerdp /f /u:$1@itserv /p:$2 /v:$3 
+
+}
+
+function gc(){
+    IN=$1
+    
+    if git clone $1 
+      then 
+          dir=${IN##*/}
+
+          cs ${dir%%.*}/  
+  
+      else 
+          echo git clone failed
+
+    fi
+        
 
 }

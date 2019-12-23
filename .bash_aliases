@@ -34,7 +34,7 @@ if [ -f ~/.functions ]; then
 fi
 
 alias clean="sudo apt-get clean && sudo apt-get autoremove && rm -rf ~/.cache/thumbnails/*"
-alias addfxn="vi ~/dotfiles/.functions"
+alias addfxn="vi ~/aliases/.functions"
 alias gi="git init"
 alias condacr="conda create --name"
 alias condal="conda env list"
@@ -59,4 +59,3 @@ alias g='gedit'
 alias fbdfxn='firebase deploy --only functions'
 alias gcad='gcloud app deploy'
 alias p3venv='python3 -m venv'
-alias gc='git clone'
